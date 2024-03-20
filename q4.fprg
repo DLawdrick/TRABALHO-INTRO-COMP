@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Domma"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 04:49:32 "/>
+        <attribute name="created" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0xOTsiMDI6MzQ6MTAgIjsyNzAy"/>
+        <attribute name="edited" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0xOTsiMDQ6NDk6MzIgIjszOzI4MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ci, DeltaT, cf, coefexp" type="Real" array="False" size=""/>
+            <output expression="&quot;escreva o comprimento inicial (em metros):&quot;" newline="True"/>
+            <input variable="ci"/>
+            <output expression="&quot;escreva a varia&#231;&#227;o de temperatura (DeltaT) em (Celcius):&quot;" newline="True"/>
+            <input variable="DeltaT"/>
+            <assign variable="cf" expression="ci*(1+(12*(10^-6))*DeltaT)"/>
+            <output expression="&quot;o comprimento final da barra &#233;:&quot; &amp; cf" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

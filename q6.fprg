@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Domma"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 04:47:26 "/>
+        <attribute name="created" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0xOTsiMDQ6MDA6MDcgIjsyNzAz"/>
+        <attribute name="edited" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0xOTsiMDQ6NDc6MjYgIjsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, h, a, Bmenor, Bmaior" type="Real" array="False" size=""/>
+            <declare name="figura" type="String" array="False" size=""/>
+            <output expression="&quot;Insira o nome da figura geom&#233;trica (triangulo, retangulo, trapezio):&quot;" newline="True"/>
+            <input variable="figura"/>
+            <if expression="figura= &quot;triangulo&quot;">
+                <then>
+                    <output expression="&quot;escreva a base do triangulo:&quot;" newline="True"/>
+                    <input variable="b"/>
+                    <output expression="&quot;escreva a altura do triangulo:&quot;" newline="True"/>
+                    <input variable="h"/>
+                    <assign variable="a" expression="(b*h)/2"/>
+                    <output expression="&quot;a area do triangulo &#233;:&quot; &amp; a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="figura= &quot;retangulo&quot;">
+                        <then>
+                            <output expression="&quot;escreva a base do retangulo:&quot;" newline="True"/>
+                            <input variable="b"/>
+                            <output expression="&quot;escreva a altura do retangulo&quot;" newline="True"/>
+                            <input variable="h"/>
+                            <assign variable="a" expression="b*h"/>
+                            <output expression="&quot;a area do retangulo &#233;:&quot; &amp; a" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="figura= &quot;trapezio&quot;">
+                                <then>
+                                    <output expression="&quot;escreva a base maior do trapezio:&quot;" newline="True"/>
+                                    <input variable="Bmaior"/>
+                                    <output expression="&quot;escreva a base menor do trapezio:&quot;" newline="True"/>
+                                    <input variable="Bmenor"/>
+                                    <output expression="&quot;escreva a altura do trapezio:&quot;" newline="True"/>
+                                    <input variable="h"/>
+                                    <assign variable="a" expression="((Bmenor+ Bmaior)*h)/ 2"/>
+                                    <output expression="&quot;a area do trapezio &#233;:&quot; &amp; a" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;figura n&#227;o reconhecida&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
