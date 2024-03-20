@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jofrey"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 01:46:54 "/>
+        <attribute name="created" value="Sm9mcmV5O0RFU0tUT1AtNjVCTks5TDsyMDI0LTAzLTE5OyIwMToxNTowOSAiOzI4NTc="/>
+        <attribute name="edited" value="Sm9mcmV5O0RFU0tUT1AtNjVCTks5TDsyMDI0LTAzLTE5OyIwMTo0Njo1NCAiOzE7Mjk2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <assign variable="x" expression="1-((2+4)^(1/2))/((4-1)^2-1)"/>
+            <output expression="&quot; o valor de x &#233;:&quot; &amp; x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mayan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 04:10:11 "/>
+        <attribute name="created" value="bWF5YW47TUFZOzIwMjQtMDMtMjA7IjAzOjI4OjA5ICI7MTk1NQ=="/>
+        <attribute name="edited" value="bWF5YW47TUFZOzIwMjQtMDMtMjA7IjAzOjUwOjA5ICI7MTsyMDU4"/>
+        <attribute name="edited" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0yMDsiMDQ6MTA6MTEgIjsxOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso, agua, carbo, prt" type="Integer" array="False" size=""/>
+            <output expression="&quot;infome o seu peso(kg):&quot;" newline="True"/>
+            <input variable="peso"/>
+            <assign variable="agua" expression="peso*50"/>
+            <assign variable="carbo" expression="peso*6.0"/>
+            <assign variable="prt" expression="peso* 2.5"/>
+            <output expression="&quot;A quantidade necessarias para seu peso &#233;:&quot;  &amp; agua  &amp; &quot;ml de &#225;gua,&quot; &amp;   carbo  &amp; &quot;g de carboidratos,&quot;   &amp; prt  &amp;  &quot;g de prote&#237;nas&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

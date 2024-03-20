@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Domma"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 12:54:48 "/>
+        <attribute name="created" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0yMDsiMTI6MjU6NTAgIjsyNjk5"/>
+        <attribute name="edited" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0yMDsiMTI6NTQ6NDggIjsxOzI4MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="candidato1, candidato2, candidato3, candidato4, nulo, branco, votoUsuario, i" type="Integer" array="False" size=""/>
+            <assign variable="candidato1" expression="0"/>
+            <assign variable="candidato2" expression="0"/>
+            <assign variable="candidato3" expression="0"/>
+            <assign variable="candidato4" expression="0"/>
+            <assign variable="nulo" expression="0"/>
+            <assign variable="branco" expression="0"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <output expression="&quot;Insira seu voto: &quot;" newline="True"/>
+                <input variable="votoUsuario"/>
+                <if expression="votoUsuario= 1">
+                    <then>
+                        <assign variable="candidato1" expression="candidato1 +1"/>
+                    </then>
+                    <else>
+                        <if expression="votoUsuario= 2">
+                            <then>
+                                <assign variable="candidato2" expression="candidato2 +1"/>
+                            </then>
+                            <else>
+                                <if expression="votoUsuario= 3">
+                                    <then>
+                                        <assign variable="candidato3" expression="candidato3 +1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="votoUsuario= 4">
+                                            <then>
+                                                <assign variable="candidato4" expression="candidato4 +1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="votoUsuario= 5">
+                                                    <then>
+                                                        <assign variable="nulo" expression="nulo +1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="votoUsuario= 6">
+                                                            <then>
+                                                                <assign variable="branco" expression="branco +1"/>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;votos para o candidato1=&quot; &amp;  candidato1" newline="True"/>
+            <output expression="&quot;votos para candidato2=&quot; &amp;  candidato2" newline="True"/>
+            <output expression="&quot;votos para candidato3=&quot; &amp;  candidato3" newline="True"/>
+            <output expression="&quot;votos para candidato4=&quot; &amp;  candidato4" newline="True"/>
+            <output expression="&quot;votos nulo=&quot; &amp;  nulo" newline="True"/>
+            <output expression="&quot;votos branco=&quot; &amp;  branco" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

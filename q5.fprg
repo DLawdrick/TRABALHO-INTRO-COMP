@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jofrey"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 03:54:30 "/>
+        <attribute name="created" value="Sm9mcmV5O0RFU0tUT1AtNjVCTks5TDsyMDI0LTAzLTE5OyIwMzo1Njo1MyAiOzI4NjM="/>
+        <attribute name="edited" value="Sm9mcmV5O0RFU0tUT1AtNjVCTks5TDsyMDI0LTAzLTE5OyIwNDo1MDozNiAiOzE7Mjk2Nw=="/>
+        <attribute name="edited" value="RG9tbWE7REFOSUVMTEFXRFJJQ0s7MjAyNC0wMy0yMDsiMDM6NTQ6MzAgIjsxOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <output expression="&quot;qual o salario mensal?&quot;" newline="True"/>
+            <input variable="salario"/>
+            <if expression="salario &lt; 2112.00">
+                <then>
+                    <output expression="&quot;isento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salario &lt; 2826.66">
+                        <then>
+                            <output expression="&quot;devolver:&quot;&amp;(salario*0.075)" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="salario &lt; 3751.06">
+                                <then>
+                                    <output expression="&quot;devolver:&quot;&amp;(salario*0.15)" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="salario &lt; 4664.68">
+                                        <then>
+                                            <output expression="&quot;devolver:&quot; &amp; (salario*0.275)" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;devolver:&quot; &amp; (salario*0.225)" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
